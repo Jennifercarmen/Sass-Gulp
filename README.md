@@ -2,5 +2,9 @@
 
 - RUN : 
 ```
-sass --watch src/scss/styles.scss:src/css/styles.css
+npm install
+```
+
+```
+gulp watch
 ```
