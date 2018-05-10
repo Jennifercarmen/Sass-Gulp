@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+@import 'variables';
+@import 'mixins';
+
+body {
+  background-color: $background-body;
+  margin: 0;
+  padding: 0;
+  color: $colorFont;
+  font-family: $FontMain;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+  @include tablet {
+    width: 90%;
+  }
+  @include desktop {
+    width: 1400px;
+  }
+}
+
+.image-grace {
+  @include image('../assets/images/grace_hopper.jpg',
+  300px,
+  top center);
+}
+
+.biography {
+  width: calc(95% - #{$widthTable});
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-right: 20px;
+}
+
+.summary {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+}
+
+.summary-table {
+  @include tableSummary($widthTable,$bgColorTable);
+   border: 1px solid #a2a9b1;
+  padding: 1px;
+  thead th {
+    background-color: #B0C4DE;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  tbody p{
+    text-align: center;
+  }
+  tbody th{
+    text-align: justify;
+    padding-left: 15px;
+  }
+  tbody td {
+    padding: 6px;
+  }
+}

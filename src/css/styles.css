@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway");
+body {
+  background-color: #e0e4cc;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  font-size: 14px; }
+
+.container {
+  margin: 0 auto;
+  max-width: 80%; }
+  @media only screen and (min-width: 760px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 1024px) {
+    .container {
+      width: 1400px; } }
+
+.image-grace {
+  background: url("../assets/images/grace_hopper.jpg");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain; }
+
+.biography {
+  width: calc(95% - 250px);
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-right: 20px; }
+
+.summary {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px; }
+
+.summary-table {
+  width: 250px;
+  background-color: #ffffff;
+  border: 1px solid #a2a9b1;
+  padding: 1px; }
+  .summary-table thead th {
+    background-color: #B0C4DE;
+    padding-top: 3px;
+    padding-bottom: 3px; }
+  .summary-table tbody p {
+    text-align: center; }
+  .summary-table tbody th {
+    text-align: justify;
+    padding-left: 15px; }
+  .summary-table tbody td {
+    padding: 6px; }
+
+/*# sourceMappingURL=styles.css.map */

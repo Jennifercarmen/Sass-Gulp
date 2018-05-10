@@ -1,0 +1,27 @@
+// Define ancho y color de fondo - Tabla
+@mixin tableSummary( $widthTable, $bgColorTable) {
+  width: $widthTable;
+  background-color: $bgColorTable;
+}
+
+// Mixin para imagen de fondo centrada 
+@mixin image($image, $height: 100vh, $bgPosition: center center, $bgRepeat:no-repeat , $bgSize:contain) {
+  background: url($image);
+  height: $height;
+  background-repeat: $bgRepeat;
+  background-position: $bgPosition;
+  background-size: $bgSize;
+}
+
+//Responsive
+@mixin tablet {
+  @media only screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}

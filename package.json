@@ -1,0 +1,11 @@
+{
+  "name": "sass-gulp",
+  "version": "1.0.0",
+  "description": "Uso de mixin",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jennifer Carmen",
+  "license": "ISC"
+}
